@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Offering__c</fullName>
+    <externalId>false</externalId>
+    <label>Offering</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Digi Customer</fullName>
+                <default>false</default>
+                <label>Digi Customer</label>
+            </value>
+            <value>
+                <fullName>Digi Consumer for Consulting</fullName>
+                <default>false</default>
+                <label>Digi Consumer for Consulting</label>
+            </value>
+            <value>
+                <fullName>Digi Tax</fullName>
+                <default>false</default>
+                <label>Digi Tax</label>
+            </value>
+            <value>
+                <fullName>Enterprise</fullName>
+                <default>false</default>
+                <label>Enterprise</label>
+            </value>
+            <value>
+                <fullName>Tax for Tax</fullName>
+                <default>false</default>
+                <label>Tax for Tax</label>
+            </value>
+            <value>
+                <fullName>Small Org</fullName>
+                <default>false</default>
+                <label>Small Org</label>
+            </value>
+            <value>
+                <fullName>Enterprise for Audit</fullName>
+                <default>false</default>
+                <label>Enterprise for Audit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

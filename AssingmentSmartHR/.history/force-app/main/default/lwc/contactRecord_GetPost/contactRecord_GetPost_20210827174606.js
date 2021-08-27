@@ -1,0 +1,33 @@
+import { LightningElement } from 'lwc';
+
+export default class ContactRecord_GetPost extends LightningElement {
+    gridColumns = [{
+            type: 'number',
+            fieldName: 'userId',
+            label: 'User ID'
+        },
+        {
+            type: 'number',
+            fieldName: 'id',
+            label: 'ID'
+        },
+        {
+            type: 'text',
+            fieldName: 'title',
+            label: 'Title'
+        },
+        {
+            type: 'text',
+            fieldName: 'body',
+            label: 'Body'
+        }
+    ];
+    gridData;
+
+    connectedCallback() {
+        fetch('https://jsonplaceholder.typicode.com/posts').then((response) => response.json()).then(json => {
+            this.gridData = json;
+            console.log(json[0]);
+        })
+    }
+}

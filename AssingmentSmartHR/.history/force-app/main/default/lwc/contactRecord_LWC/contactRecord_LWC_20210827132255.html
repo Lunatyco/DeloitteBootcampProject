@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Create Record">
+        <lightning-layout>
+            <lightning-layout-item size="6">
+
+                <!-- Displaying fields to get information. -->
+                <lightning-input class="slds-p-around_medium" label="Title" name="Title" 
+                    onchange={titleChangedHandler}></lightning-input>
+                <lightning-input class="slds-p-around_medium" label="Body" name="Body" 
+                    onchange={bodyChangedHandler}></lightning-input>
+                <br/>
+                <lightning-button class="slds-m-left_x-small" label="Create Record" variant="brand" 
+                    onclick={createFetch}></lightning-button>
+                    <br/>                    
+                    <lightning-ui-list-api>
+                        {strUrl}
+                    </lightning-ui-list-api>
+                    
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>
